@@ -1,0 +1,213 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portofolio Kuliner Indonesia — Nuansa Tradisional</title>
+<meta name="description" content="Portofolio kuliner Indonesia dengan nuansa tradisional: resep, galeri, dan cerita kuliner lokal.">
+
+  :root{
+    --primary:#7b241c; /* deep red - merah tradisional */
+    --accent:#f4d03f;  /* gold */
+    --bg:#fff8f2; /* warm cream */
+    --card:#fffdf9;
+    --text:#2b2b2b;
+    --muted:#6b5b4a;
+    --max-w:1100px;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background: var(--bg);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.5;
+  }
+  /* header */
+  header{
+    background-image: linear-gradient(180deg, rgba(123,36,28,0.95), rgba(123,36,28,0.85));
+    color:white;
+    padding:28px 20px;
+    box-shadow: 0 6px 18px rgba(43,43,43,0.12);
+  }
+  .container{max-width:var(--max-w);margin:0 auto;padding:0 18px}
+  nav{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand .logo{
+    width:56px;height:56px;border-radius:12px;background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=200&q=60');
+    background-size:cover;background-position:center;border:3px solid rgba(244,208,63,0.15);
+    box-shadow:0 6px 18px rgba(0,0,0,0.18);
+  }
+  .brand h1{font-size:18px;margin:0;font-weight:700}
+  .brand p{margin:0;font-size:12px;opacity:0.9}
+  .nav-links{display:flex;gap:18px;align-items:center}
+  .nav-links a{color:rgba(255,255,255,0.95);text-decoration:none;font-weight:600}
+  /* hero */
+  .hero{
+    display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center;padding:36px 0
+  }
+  .hero-left h2{font-size:34px;margin:0 0 12px}
+  .hero-left p{margin:0 0 18px;color:var(--muted)}
+  .cta{display:inline-block;background:var(--accent);color:var(--primary);padding:12px 18px;border-radius:10px;font-weight:700;text-decoration:none}
+  .hero-right{background:linear-gradient(180deg,rgba(0,0,0,0.06),rgba(0,0,0,0.02));padding:14px;border-radius:16px}
+  .card-hero{display:flex;flex-direction:column;gap:10px;background:var(--card);padding:12px;border-radius:12px}
+  .card-hero img{width:100%;height:220px;object-fit:cover;border-radius:8px}
+  .meta{font-size:13px;color:var(--muted)}
+  /* sections */
+  section{padding:28px 0}
+  .intro{display:flex;gap:20px;align-items:flex-start}
+  .intro .text{flex:1}
+  .intro .text h3{margin-top:0}
+  .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:14px}
+  .feature{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+  .feature h4{margin:6px 0}
+  /* gallery */
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .food-card{background:linear-gradient(180deg,#fff,#fffdf9);border-radius:12px;padding:8px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,0.06)}
+  .food-card img{width:100%;height:180px;object-fit:cover;border-radius:8px}
+  .food-card .caption{padding:8px}
+  .food-card h5{margin:0 0 6px}
+  .tag{display:inline-block;background:rgba(123,36,28,0.08);color:var(--primary);padding:6px 8px;border-radius:8px;font-weight:700;font-size:12px}
+  /* footer */
+  footer{padding:28px 0;background:linear-gradient(180deg,rgba(0,0,0,0.02),transparent);border-top:1px solid rgba(0,0,0,0.04)}
+  .footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
+  .socials a{margin-right:10px;text-decoration:none;color:var(--muted);font-weight:700}
+  /* responsive */
+  @media(max-width:900px){
+    .hero{grid-template-columns:1fr;}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+    .features{grid-template-columns:repeat(2,1fr)}
+  }
+  @media(max-width:520px){
+    .gallery{grid-template-columns:1fr}
+    .features{grid-template-columns:1fr}
+    nav{flex-direction:column;align-items:flex-start;gap:14px}
+    .brand{gap:10px}
+  }
+  /* decorative batik stripe */
+  .batik{
+    margin-top:18px;padding:12px;border-radius:12px;background-image:url('https://images.unsplash.com/photo-1542918693-5c8de2a5d6b3?auto=format&fit=crop&w=1500&q=80');
+    background-size:cover;background-position:center;color:white;box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.12)
+  }
+</style>
+ 
+ 
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">
+        <div class="logo" aria-hidden=""></div>
+        <div>
+          <h1>Portofolio Kuliner</h1>
+          <p>Racikan & Cerita Kuliner Indonesia</p>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#about">Tentang</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#contact">Kontak</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="hero-left">
+        <h2>Rasa Nusantara — Kumpulan Resep & Cerita Tradisi</h2>
+        <p>Nikmati rangkaian cita rasa dari Sabang sampai Merauke. Portofolio ini menampilkan resep, foto makanan, dan kisah di balik hidangan tradisional Indonesia.</p>
+        <a class="cta" href="#gallery">Lihat Galeri Makanan</a>
+        <div class="batik" style="margin-top:18px">
+          <strong>Highlight:</strong>
+          <p style="margin:6px 0 0;">Sate Madura, Rendang Padang, Gudeg Jogja, Pempek Palembang, Papeda Maluku — digali dari sumber lokal.</p>
+        </div>
+      </div>
+      <aside class="hero-right">
+        <div class="card-hero">
+          <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=1200&q=80" alt="Hidangan tradisional">
+          <div>
+            <div class="meta">Foto & Cerita — By: Penjajal Rasa</div>
+            <h3 style="margin:8px 0 0">Rendang Padang — Resep Keluarga</h3>
+            <p style="margin:6px 0 0;color:var(--muted)">Resep rendang turun temurun dari Sumatera Barat, dimasak perlahan hingga bumbu meresap sempurna.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</header>
+ 
+<main class="container">
+  <section id="about">
+    <div class="intro">
+      <div class="text">
+        <h3>Tentang Portofolio</h3>
+        <p>Portofolio ini dibuat untuk memamerkan dokumentasi kuliner tradisional Indonesia — mulai dari foto, resep sederhana, hingga cerita di balik makanan. Cocok untuk pekerjaan fotografi makanan, penulisan kuliner, atau referensi kuliner lokal.</p>
+        <div class="features">
+          <div class="feature"><h4>Resep Autentik</h4><p class="meta">Resep dikumpulkan dari keluarga & pedagang lokal.</p></div>
+          <div class="feature"><h4>Fotografi Makanan</h4><p class="meta">Galeri gambar high-resolution dengan pendekatan tradisional.</p></div>
+          <div class="feature"><h4>Budaya & Cerita</h4><p class="meta">Setiap hidangan memiliki cerita budaya yang unik.</p></div>
+        </div>
+      </div>
+      <div style="width:320px">
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80" alt="Masakan tradisional" style="width:100%;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.08)">
+      </div>
+    </div>
+  </section>
+ 
+  <section id="gallery">
+    <h3>Galeri Kuliner</h3>
+    <p style="color:var(--muted)">Kumpulan foto makanan tradisional Indonesia, klik untuk melihat detail.</p>
+    <div class="gallery" style="margin-top:12px">
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1604908177522-6c8d3a5b9e6b?auto=format&fit=crop&w=1200&q=80" alt="Rendang">
+        <div class="caption"><h5>Rendang Padang</h5><div class="tag">Sumatera Barat</div></div>
+      </div>
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1606756797279-633b3b8d0f3a?auto=format&fit=crop&w=1200&q=80" alt="Sate">
+        <div class="caption"><h5>Sate Madura</h5><div class="tag">Jawa Timur</div></div>
+      </div>
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" alt="Gudeg">
+        <div class="caption"><h5>Gudeg Jogja</h5><div class="tag">Yogyakarta</div></div>
+      </div>
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1572448862522-6e5d4b9a2f21?auto=format&fit=crop&w=1200&q=80" alt="Pempek">
+        <div class="caption"><h5>Pempek Palembang</h5><div class="tag">Sumatera Selatan</div></div>
+      </div>
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1589308078059-2f8b1c8c6b85?auto=format&fit=crop&w=1200&q=80" alt="Papeda">
+        <div class="caption"><h5>Papeda & Ikan Kuah</h5><div class="tag">Papua & Maluku</div></div>
+      </div>
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1548247416-6a1f6f7b600b?auto=format&fit=crop&w=1200&q=80" alt="Nasi Tumpeng">
+        <div class="caption"><h5>Nasi Tumpeng</h5><div class="tag">Jawa</div></div>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="contact">
+    <h3>Kontak & Kerjasama</h3>
+    <p style="color:var(--muted)">Tertarik bekerjasama (fotografi, penulisan, atau event kuliner)? Hubungi:</p>
+    <div style="display:flex;gap:18px;align-items:center;margin-top:12px;flex-wrap:wrap">
+      <div style="background:var(--card);padding:12px;border-radius:12px;min-width:220px">
+        <strong>Email</strong>
+        <div style="color:var(--muted);margin-top:6px">contoh.email@domain.com</div>
+      </div>
+      <div style="background:var(--card);padding:12px;border-radius:12px;min-width:220px">
+        <strong>Instagram</strong>
+        <div style="color:var(--muted);margin-top:6px">@penjajalrasa</div>
+      </div>
+    </div>
+  </section>
+</main>
+ 
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <strong>Portofolio Kuliner</strong>
+      <div style="color:var(--muted);margin-top:6px">© 2025 — Semua hak cipta milik pembuat</div>
+    </div>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Email</a>
+    </div>
+  </div>
+</footer>
+LinkedIn
